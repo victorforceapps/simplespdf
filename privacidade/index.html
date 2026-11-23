@@ -11,7 +11,7 @@
 <main>
 <p class="lang"><a href="../privacy/">English</a></p>
 <h1>Política de Privacidade do SimplesPDF</h1>
-<p class="meta">Vigente desde 11 de novembro de 2026</p>
+<p class="meta">Vigente desde 23 de novembro de 2026</p>
 
 <p>O SimplesPDF é um editor de PDF para Android desenvolvido por Victor Carvalho Capanema
 (<a href="mailto:victor.forceapps@gmail.com">victor.forceapps@gmail.com</a>). Esta política explica
@@ -20,6 +20,8 @@ quais dados o app usa e para onde eles vão.</p>
 <h2>Resumo</h2>
 <ul>
 <li>Seus documentos, fotos, assinaturas e dados pessoais <strong>ficam no seu celular</strong>. Nós não os recebemos.</li>
+<li>A única exceção é a conversão de Word, Excel e PowerPoint em PDF: só quando você pede, o arquivo vai para o
+<strong>seu próprio Google Drive</strong>, o Google o converte e o app apaga a cópia de lá em seguida.</li>
 <li>O app não tem conta, login, anúncios nem rastreamento para publicidade.</li>
 <li>O reconhecimento de texto (OCR) usa o ML Kit, do Google, que envia ao Google
 <strong>dados técnicos de uso</strong> (não o conteúdo dos seus documentos).</li>
@@ -50,6 +52,28 @@ envia automaticamente ao Google, por conexão criptografada (HTTPS), informaçõ
 Saiba mais em <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit – divulgação de dados</a>
 e na <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>.</p>
 
+<h2>Conversão de Word, Excel e PowerPoint (Google Drive)</h2>
+<p>A ferramenta "Word, Excel ou PowerPoint para PDF" é a única que usa a internet com o conteúdo de um arquivo, e só
+quando você a usa. Antes da primeira conversão, o app avisa e pede sua concordância. Depois:</p>
+<ul>
+<li>você escolhe uma conta Google do celular e autoriza o SimplesPDF a acessar <strong>apenas os arquivos do Google
+Drive que o próprio app criar</strong> (permissão <code>drive.file</code>). O app não vê nem acessa os outros
+arquivos do seu Drive;</li>
+<li>o arquivo escolhido é enviado, por conexão criptografada (HTTPS), para o <strong>seu</strong> Google Drive,
+convertido pelo Google (Documentos, Planilhas ou Apresentações) e baixado de volta como PDF;</li>
+<li>logo em seguida o app <strong>apaga definitivamente</strong> a cópia do seu Drive (sem passar pela lixeira).
+Se a internet cair nesse momento, a cópia pode ficar no seu Drive, e você pode apagá-la por lá;</li>
+<li>o PDF fica só no seu celular, até você salvá-lo ou compartilhá-lo.</li>
+</ul>
+<p>O arquivo vai para a sua conta, não para nós: nós não recebemos o arquivo nem os dados da sua conta, e o app não
+guarda seu nome ou e-mail. O que acontece no Google Drive segue a
+<a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>. Você pode tirar o acesso do
+SimplesPDF quando quiser em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+<p>O uso e a transferência, pelo SimplesPDF, de informações recebidas das APIs do Google seguem a
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos
+Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado. Essas informações são usadas só para fazer
+a conversão que você pediu, não são usadas para publicidade e não são repassadas a ninguém.</p>
+
 <h2>Serviços do Android e do Google Play</h2>
 <ul>
 <li><strong>Fontes de outros alfabetos:</strong> são baixadas pela Google Play Store quando você pede.</li>
@@ -60,15 +84,15 @@ próprio Android e os apps que você escolher, que seguem as políticas de priva
 
 <h2>Permissões</h2>
 <p>O app só acessa os arquivos que você escolhe abrir ou onde escolhe salvar. Ele não pede acesso à câmera,
-localização, contatos nem a todos os seus arquivos. A permissão de internet é usada pelo ML Kit (dados técnicos acima)
-e pela Play Store para baixar fontes.</p>
+localização, contatos nem a todos os seus arquivos. A permissão de internet é usada pelo ML Kit (dados técnicos acima),
+pela Play Store para baixar fontes e pela conversão de Word, Excel e PowerPoint, quando você a usa.</p>
 
 <h2>Crianças</h2>
 <p>O app não é direcionado a menores de 13 anos.</p>
 
 <h2>Seus direitos</h2>
 <p>Como não recebemos dados pessoais seus, não temos dados para consultar, corrigir ou excluir. Os dados que ficam
-no celular estão sob seu controle. Sobre os dados técnicos do ML Kit, consulte o Google. Em caso de dúvida, inclusive
+no celular estão sob seu controle. Sobre os dados técnicos do ML Kit e sobre o seu Google Drive, consulte o Google. Em caso de dúvida, inclusive
 sobre a LGPD, escreva para <a href="mailto:victor.forceapps@gmail.com">victor.forceapps@gmail.com</a>.</p>
 
 <h2>Mudanças nesta política</h2>

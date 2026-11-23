@@ -11,7 +11,7 @@
 <main>
 <p class="lang"><a href="../privacidade/">Português</a></p>
 <h1>SimplesPDF Privacy Policy</h1>
-<p class="meta">Effective November 11, 2026</p>
+<p class="meta">Effective November 23, 2026</p>
 
 <p>SimplesPDF is a PDF editor for Android developed by Victor Carvalho Capanema
 (<a href="mailto:victor.forceapps@gmail.com">victor.forceapps@gmail.com</a>). This policy explains
@@ -20,6 +20,8 @@ what data the app uses and where it goes.</p>
 <h2>Summary</h2>
 <ul>
 <li>Your documents, photos, signatures and personal details <strong>stay on your phone</strong>. We never receive them.</li>
+<li>The only exception is converting Word, Excel and PowerPoint files to PDF: only when you ask, the file goes to
+<strong>your own Google Drive</strong>, Google converts it, and the app deletes the copy there right after.</li>
 <li>The app has no account, no login, no ads and no advertising tracking.</li>
 <li>Text recognition (OCR) uses Google's ML Kit, which sends Google <strong>technical usage data</strong>
 (never the content of your documents).</li>
@@ -50,6 +52,28 @@ over an encrypted connection (HTTPS), information for diagnostics and usage anal
 Learn more in <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit data disclosure</a>
 and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
+<h2>Word, Excel and PowerPoint conversion (Google Drive)</h2>
+<p>The "Word, Excel or PowerPoint to PDF" tool is the only one that sends a file's content over the internet, and only
+when you use it. Before the first conversion, the app tells you and asks for your agreement. Then:</p>
+<ul>
+<li>you choose a Google account on the phone and allow SimplesPDF to access <strong>only the Google Drive files the
+app itself creates</strong> (the <code>drive.file</code> permission). The app cannot see or access any other file in
+your Drive;</li>
+<li>the file you chose is sent over an encrypted connection (HTTPS) to <strong>your</strong> Google Drive, converted by
+Google (Docs, Sheets or Slides) and downloaded back as a PDF;</li>
+<li>right after, the app <strong>permanently deletes</strong> the copy in your Drive (skipping the trash). If the
+connection drops at that moment, the copy may stay in your Drive, and you can delete it there;</li>
+<li>the PDF stays only on your phone until you save or share it.</li>
+</ul>
+<p>The file goes to your account, not to us: we never receive the file or your account details, and the app does not
+store your name or e-mail. What happens in Google Drive follows the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>. You can remove SimplesPDF's access at any
+time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+<p>SimplesPDF's use and transfer of information received from Google APIs adheres to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+including the Limited Use requirements. This information is used only to perform the conversion you asked for, is
+not used for advertising and is not passed to anyone.</p>
+
 <h2>Android and Google Play services</h2>
 <ul>
 <li><strong>Fonts for other alphabets</strong> are downloaded by the Google Play Store when you ask for them.</li>
@@ -60,15 +84,15 @@ you choose, which follow their own privacy policies.</li>
 
 <h2>Permissions</h2>
 <p>The app only accesses the files you choose to open or where you choose to save. It does not ask for access to the camera,
-location, contacts or all your files. The internet permission is used by ML Kit (technical data above) and by the
-Play Store to download fonts.</p>
+location, contacts or all your files. The internet permission is used by ML Kit (technical data above), by the
+Play Store to download fonts and by the Word, Excel and PowerPoint conversion, when you use it.</p>
 
 <h2>Children</h2>
 <p>The app is not directed to children under 13.</p>
 
 <h2>Your rights</h2>
 <p>Since we do not receive any personal data from you, we hold no data to access, correct or delete. Data kept on the
-phone is under your control. For ML Kit's technical data, see Google. For any question, including under the GDPR or
+phone is under your control. For ML Kit's technical data and your Google Drive, see Google. For any question, including under the GDPR or
 Brazil's LGPD, write to <a href="mailto:victor.forceapps@gmail.com">victor.forceapps@gmail.com</a>.</p>
 
 <h2>Changes to this policy</h2>
