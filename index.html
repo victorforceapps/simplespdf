@@ -3,21 +3,149 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SimplesPDF</title>
+<title>SimplesPDF – editor de PDF para Android</title>
+<meta name="description" content="SimplesPDF: edite o texto do próprio PDF, assine, preencha formulários, junte e organize páginas no celular. Sem conta, funciona offline.">
+<link rel="icon" href="favicon.png">
 <link rel="stylesheet" href="style.css">
+<link rel="alternate" hreflang="pt-BR" href="./">
+<link rel="alternate" hreflang="en" href="en/">
+<script>
+/* Navegador fora do português vai para a versão em inglês, a menos que a pessoa já tenha escolhido o idioma. */
+(function () {
+  var chosen = null;
+  try { chosen = localStorage.getItem("lang"); } catch (e) {}
+  if (chosen === "pt") return;
+  var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+  var prefersPt = /^pt\b/i.test(langs[0] || "");
+  if (chosen === "en" || !prefersPt) location.replace("en/" + location.hash);
+})();
+</script>
 </head>
-<body>
+<body class="home">
 <main>
-<h1>SimplesPDF</h1>
-<p>Editor de PDF para Android: edite o texto do próprio documento, assine, preencha, junte e organize páginas.
-Sem conta, funciona offline (só a conversão de Word, Excel e PowerPoint usa o seu Google Drive, se você pedir).</p>
-<p>PDF editor for Android: edit the document's own text, sign, fill in, merge and organize pages.
-No account, works offline (only the Word, Excel and PowerPoint conversion uses your Google Drive, when you ask).</p>
-<h2>Links</h2>
-<ul>
-<li><a href="privacidade/">Política de Privacidade</a> · <a href="privacy/">Privacy Policy</a></li>
-<li>Contato / Contact: <a href="mailto:victor.forceapps@gmail.com">victor.forceapps@gmail.com</a></li>
-</ul>
+
+<header class="topbar">
+  <a class="brand" href="./"><img src="img/icon-192.png" alt="" width="36" height="36">SimplesPDF</a>
+  <nav>
+    <a class="hide-sm" href="#recursos">Recursos</a>
+    <a class="hide-sm" href="#privacidade">Privacidade</a>
+    <a href="en/" hreflang="en" lang="en" onclick="try{localStorage.setItem('lang','en')}catch(e){}">English</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Corrija o PDF <em>tocando no texto</em>.</h1>
+    <p class="lead">O SimplesPDF é um editor de PDF para Android que muda as palavras que já estão no documento,
+    e o texto novo fica igual ao resto. Assine, preencha formulários, junte e organize páginas no celular.</p>
+    <div class="cta">
+      <span class="badge soon">Em breve no Google Play</span>
+      <a class="badge ghost" href="privacidade/">Política de Privacidade</a>
+    </div>
+    <ul class="pill-list">
+      <li>Sem conta</li>
+      <li>Funciona offline</li>
+      <li>Sem anúncios</li>
+      <li>21 idiomas</li>
+    </ul>
+  </div>
+  <div class="hero-shot">
+    <img class="phone" src="img/03-edit-pt.webp" width="540" height="960"
+         alt="Tela do SimplesPDF editando a data de um contrato direto no texto do PDF">
+  </div>
+</section>
+
+<section class="block" id="recursos">
+  <h2>O que dá para fazer</h2>
+  <p class="section-lead">Tudo no celular, sem precisar do computador.</p>
+  <div class="features">
+    <div class="feature">
+      <h3>Editar o PDF</h3>
+      <ul>
+        <li>Mudar uma palavra, uma linha ou o parágrafo inteiro</li>
+        <li>Localizar e substituir</li>
+        <li>Texto, fotos, notas e desenhos</li>
+        <li>Destacar, sublinhar ou riscar</li>
+      </ul>
+    </div>
+    <div class="feature">
+      <h3>Assinar e preencher</h3>
+      <ul>
+        <li>Assinatura com o dedo, guardada para a próxima vez</li>
+        <li>Formulários, até os escaneados ou fotografados</li>
+        <li>Seus dados com um toque</li>
+        <li>Carimbos como Aprovado e Pago</li>
+      </ul>
+    </div>
+    <div class="feature">
+      <h3>Organizar páginas</h3>
+      <ul>
+        <li>Juntar, dividir, girar, recortar e reordenar</li>
+        <li>Número de página, marca d'água e papel timbrado</li>
+        <li>RG ou CNH frente e verso numa folha</li>
+      </ul>
+    </div>
+    <div class="feature">
+      <h3>Digitalizar</h3>
+      <ul>
+        <li>Fotografe o papel: a folha é encontrada e endireitada</li>
+        <li>Página escaneada vira texto editável e pesquisável</li>
+      </ul>
+    </div>
+    <div class="feature">
+      <h3>Converter</h3>
+      <ul>
+        <li>PDF para Word, Excel e PowerPoint</li>
+        <li>Word, Excel e PowerPoint para PDF</li>
+        <li>Fotos para PDF e páginas para imagem</li>
+      </ul>
+    </div>
+    <div class="feature">
+      <h3>Proteger e reduzir</h3>
+      <ul>
+        <li>Comprimir para mandar por e-mail ou WhatsApp</li>
+        <li>Colocar ou tirar senha</li>
+        <li>Apagar de vez informações privadas</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <h2>Veja o app</h2>
+  <div class="gallery">
+    <figure><img class="phone" src="img/03-edit-pt.webp" width="540" height="960" loading="lazy" alt="Editando o texto de um contrato"><figcaption>Editar o texto</figcaption></figure>
+    <figure><img class="phone" src="img/04-sign-pt.webp" width="540" height="960" loading="lazy" alt="Assinando um documento com o dedo"><figcaption>Assinar</figcaption></figure>
+    <figure><img class="phone" src="img/05-pages-pt.webp" width="540" height="960" loading="lazy" alt="Miniaturas das páginas para reorganizar"><figcaption>Organizar páginas</figcaption></figure>
+    <figure><img class="phone" src="img/06-tools-pt.webp" width="540" height="960" loading="lazy" alt="Lista de ferramentas do app"><figcaption>Ferramentas</figcaption></figure>
+  </div>
+</section>
+
+<section class="block" id="privacidade">
+  <h2>Seus documentos ficam com você</h2>
+  <p class="section-lead">O app não tem conta, login, anúncios nem rastreamento para publicidade.</p>
+  <div class="privacy-grid">
+    <div class="callout">
+      <h3>No seu celular</h3>
+      <p>Abrir, editar, assinar, preencher, digitalizar e converter para Word acontecem no aparelho,
+      mesmo sem internet. Seus arquivos, fotos, assinaturas e dados não são enviados para nós.</p>
+    </div>
+    <div class="callout" id="google-drive">
+      <h3>Por que o app pede acesso ao Google Drive</h3>
+      <p>Só para converter Word, Excel ou PowerPoint em PDF, e só quando você pede. O arquivo vai para o
+      <strong>seu próprio Google Drive</strong>, o Google o converte, o app traz o PDF de volta e apaga a cópia de lá.</p>
+      <p>O acesso é só aos arquivos que o próprio app cria (permissão <code>drive.file</code>): ele não vê
+      nem lê os outros arquivos do seu Drive. Nada passa por servidores nossos.</p>
+    </div>
+  </div>
+  <p style="margin-top:20px"><a href="privacidade/">Leia a Política de Privacidade completa</a></p>
+</section>
+
+<footer class="site">
+  <span>SimplesPDF · desenvolvido por Victor Carvalho Capanema</span>
+  <span><a href="privacidade/">Política de Privacidade</a> · <a href="mailto:victor.forceapps@gmail.com">victor.forceapps@gmail.com</a></span>
+</footer>
+
 </main>
 </body>
 </html>
