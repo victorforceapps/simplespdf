@@ -3,23 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SimplesPDF – editor de PDF para Android</title>
+<title>SimplesPDF</title>
 <meta name="description" content="SimplesPDF: edite o texto do próprio PDF, assine, preencha formulários, junte e organize páginas no celular. Sem conta, funciona offline.">
 <link rel="icon" href="favicon.png">
 <link rel="stylesheet" href="style.css">
 <link rel="alternate" hreflang="pt-BR" href="./">
 <link rel="alternate" hreflang="en" href="en/">
-<script>
-/* Navegador fora do português vai para a versão em inglês, a menos que a pessoa já tenha escolhido o idioma. */
-(function () {
-  var chosen = null;
-  try { chosen = localStorage.getItem("lang"); } catch (e) {}
-  if (chosen === "pt") return;
-  var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
-  var prefersPt = /^pt\b/i.test(langs[0] || "");
-  if (chosen === "en" || !prefersPt) location.replace("en/" + location.hash);
-})();
-</script>
 </head>
 <body class="home">
 <main>
@@ -35,7 +24,8 @@
 
 <section class="hero">
   <div>
-    <h1>Corrija o PDF <em>tocando no texto</em>.</h1>
+    <h1>SimplesPDF</h1>
+    <p class="tagline">Corrija o PDF <em>tocando no texto</em>.</p>
     <p class="lead">O SimplesPDF é um editor de PDF para Android que muda as palavras que já estão no documento,
     e o texto novo fica igual ao resto. Assine, preencha formulários, junte e organize páginas no celular.</p>
     <div class="cta">
